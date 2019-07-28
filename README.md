@@ -27,5 +27,18 @@ This is a template for Jenkinsfile and it is consisting of main stages for CICD 
          > bat 'mvn clean package'
 
 
-Make sure to review each stage and all inside steps
-This jenkinsfile should be pushed to the git repo as part of source code and to configure Jenkins job to invoke the build execution through the this jenkinsfile 
+Make sure to review each stage and all inside steps.
+This jenkinsfile should be pushed to `git repo` along side with source code.
+
+## Defining a Pipeline in Jenkins
+- There are different ways to create pipeline in Jenkins
+   - Through Blue Ocean - after setting up a Pipeline project in Blue Ocean, the Blue Ocean UI helps you write your Pipeline’s Jenkinsfile and commit it to source control.
+
+   - Through the classic UI - you can enter a basic Pipeline directly in Jenkins through the classic UI. 
+
+   - In SCM - you can write a Jenkinsfile manually, which you can commit to your project’s source control repository.
+
+:+1: It is generally considered best practice to define the Pipeline in a Jenkinsfile which Jenkins will then load directly from source control.
+
+:+1: Reference
+   > https://jenkins.io/doc/book/pipeline/
